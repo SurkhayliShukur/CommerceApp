@@ -1,11 +1,12 @@
 import React from 'react'
 import './App.css'
+import Layout from './Components/layout/Layout'
 
 function App() {
 
   return (
     <>
-      <h1>Hello World</h1>
+      <Layout/>
     </>
   )
 }
