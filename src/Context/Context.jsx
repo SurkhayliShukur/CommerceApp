@@ -1,39 +1,37 @@
+import { createContext, useState,useEffect } from "react";
 import axios from "axios";
-import { createContext } from "react";
 
-const ProductContext = createContext
+const Context = createContext();
 
-const ProductContextProvider = ({children}) => {
-    const [product,setProduct] = useState([])
+export const ContextProvider = ({children}) => {
+    const [product,setProduct] = useState([]);
     
-    const getProduct = async () => {
+    const getJsonData = async() => {
         try{
-            const res = await axios.get("https://dummyjson.com/products")
-            if(res !== 200){
+            const res = await axios.get("http://localhost:4400/products")
+            if(res.status !==200){
                 console.log(error)
             }
-            else{
-                setProduct(res.data)
-            }
+            else(setProduct(res.data));
         }
         catch(error){
             console.log(error)
         }
-       
     }
     useEffect(() => {
-        getProduct()
+        getJsonData()
     },[])
+    
 
-    const value = {
-        setProduct,product
+   const value = {
+        product,setProduct
     }
 
+
     return(
-       <ProductContext.Provider value ={value}>
-        {children}
-       </ProductContext.Provider>
+        <Context.Provider value = {value}>
+            {children}
+        </Context.Provider>
     )
 }
-
-export {ProductContextProvider,ProductContext}
+export default Context
