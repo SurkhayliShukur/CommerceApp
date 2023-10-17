@@ -24,7 +24,8 @@ export const ContextProvider = ({children}) => {
     
 
    const value = {
-        product,setProduct
+        product,
+        setProduct
     }
 
 
