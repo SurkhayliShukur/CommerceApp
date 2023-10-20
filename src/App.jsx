@@ -1,12 +1,17 @@
 import React from 'react'
 import './App.css'
-import Layout from './Components/layout/Layout'
+import Home from './pages/Home'
+import { Routes,Route } from 'react-router-dom'
+import Sidebar from './Components/Sidebar'
 
 function App() {
 
   return (
     <>
-      <Layout/>
+    <Routes>
+     <Route path='/' element = {<Home/>} />
+    </Routes>
+    <Sidebar/>
     </>
   )
 }

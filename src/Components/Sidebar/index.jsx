@@ -1,0 +1,31 @@
+import React, { useContext } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { ProductContext } from '../../Context/ProductContext';
+
+const Sidebar = () => {
+    const {open ,setOpen} = useContext(ProductContext)
+    const card = useSelector((state) => state.persistedReducer.basket.basket);
+    const totalPrice = useSelector((state) => state.persistedReducer.basket.totalPrice);
+    const totalAmount = useSelector((state) => state.persistedReducer.basket.totalAmount);
+  return (
+   <>
+      <div  className={`${
+          open ? "right-0" : "-right-full"
+        } w-full bg-white  fixed top-0 h-full shadow-2xl md:w-[30vw] 
+         xl:max-w-[30vw] mt-14 transition-all duration-500 px-4 lg:px-[35px] `}>
+          <div   className="flex justify-between items-center py-6 border-b border-red-400"
+          onClick={() => {
+            setOpen(false)
+          }}>
+            <p className='uppercase text-md font-semibold'>
+              Bag  (<span className='text-red-500'>{totalAmount}</span>)
+            </p>
+
+          </div>
+
+      </div>
+   </>
+  )
+}
+
+export default Sidebar

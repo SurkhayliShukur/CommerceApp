@@ -1,5 +1,5 @@
 import { combineReducers } from "@reduxjs/toolkit";
-import { basketReducer } from "../slices/basketSlice";
+import basketReducer from "../slices/basketSlice"
 
 const rootReducer = combineReducers({
     basket:basketReducer
