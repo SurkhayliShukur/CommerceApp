@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { ProductContext } from '../../Context/ProductContext';
+import CardItem from '../CardItem';
 
 const Sidebar = () => {
     const {open ,setOpen} = useContext(ProductContext)
     const card = useSelector((state) => state.persistedReducer.basket.basket);
     const totalPrice = useSelector((state) => state.persistedReducer.basket.totalPrice);
     const totalAmount = useSelector((state) => state.persistedReducer.basket.totalAmount);
+    console.log("totalAmount")
   return (
    <>
       <div  className={`${
@@ -20,8 +22,14 @@ const Sidebar = () => {
             <p className='uppercase text-md font-semibold'>
               Bag  (<span className='text-red-500'>{totalAmount}</span>)
             </p>
-
           </div>
+          <div className='flex flex-col gap-y-2 h-[550px] lg:h-[600px] border-b overflow-y-auto overflow-x-hidden'>
+                {
+                  card.map((product) => (
+                    <CardItem key={product.id}  product = {product}/>
+                  ))
+                }
+            </div>
 
       </div>
    </>

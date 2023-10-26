@@ -1,113 +1,147 @@
 {
-    "products": [
-      {
-        "id": 58,
-        "title": "Alaba",
-        "price": "3333",
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": null,
-        "category": "car",
-        "stock": 3,
-        "rating": 3.2
-      },
-      {
-        "id": 59,
-        "title": "Balaba",
-        "price": 140,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": null,
-        "category": "men",
-        "rating": 2.2
-      },
-      {
-        "id": 53,
-        "title": "Practical Granite Car",
-        "price": 40,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "women",
-        "stock": 3,
-        "rating": 7.2
-      },
-      {
-        "id": 63,
-        "title": "Practical Granite Car",
-        "price": 2400,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "toys",
-        "stock": 3,
-        "rating": 9.2
-      },
-      {
-        "id": 93,
-        "title": "Practical Granite Car",
-        "price": 2140,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "Men",
-        "stock": 3,
-        "rating": 1.1
-      },
-      {
-        "id": 513,
-        "title": "Cractical Granite Car",
-        "price": 24,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "kids",
-        "stock": 3,
-        "rating": 3
-      },
-      {
-        "id": 23,
-        "title": "Bractical Granite Car",
-        "price": 20,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "phone",
-        "stock": 3,
-        "rating": 7.4
-      },
-      {
-        "id": 153,
-        "title": "Aractical Granite Car",
-        "price": 33,
-        "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
-        "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
-        "category": "mouse",
-        "stock": 3,
-        "rating": 5.5
-      },
-      {
-        "title": "dede",
-        "description": "gooood",
-        "price": "43",
-        "category": "dortmind",
-        "stock": "23",
-        "rating": "3.6",
-        "image": "https://firebasestorage.googleapis.com/v0/b/final-d783c.appspot.com/o/images%2Fdd.png?alt=media&token=bbb217bc-492a-4624-bced-5146daa02038",
-        "id": 514
-      },
-      {
-        "title": "Baton",
-        "description": "liked",
-        "price": "33",
-        "category": "konfet",
-        "stock": "343",
-        "rating": "7",
-        "image": null,
-        "id": 515
-      },
-      {
-        "title": "ghbgf",
-        "description": "rfew",
-        "price": "44",
-        "category": "ghgfhgfh",
-        "stock": "44",
-        "rating": "4",
-        "image": "https://firebasestorage.googleapis.com/v0/b/final-d783c.appspot.com/o/images%2FGS.jpg?alt=media&token=c4d4cb10-aeea-433f-9f53-fb15e6ed523c",
-        "id": 516
-      }
-    ]
-  }
+  "products": [
+    {
+      "id": 58,
+      "title": "Alaba",
+      "price": "3333",
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": null,
+      "category": "car",
+      "stock": 3,
+      "rating": 3.2
+    },
+    {
+      "id": 59,
+      "title": "Balaba",
+      "price": 140,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": null,
+      "category": "men",
+      "rating": 2.2
+    },
+    {
+      "id": 53,
+      "title": "Practical Granite Car",
+      "price": 40,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "women",
+      "stock": 3,
+      "rating": 7.2
+    },
+    {
+      "id": 63,
+      "title": "Practical Granite Car",
+      "price": 2400,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "toys",
+      "stock": 3,
+      "rating": 9.2
+    },
+    {
+      "id": 93,
+      "title": "Practical Granite Car",
+      "price": 2140,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "Men",
+      "stock": 3,
+      "rating": 1.1
+    },
+    {
+      "id": 513,
+      "title": "Cractical Granite Car",
+      "price": 24,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "kids",
+      "stock": 3,
+      "rating": 3
+    },
+    {
+      "id": 23,
+      "title": "Bractical Granite Car",
+      "price": 20,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "phone",
+      "stock": 3,
+      "rating": 7.4
+    },
+    {
+      "id": 153,
+      "title": "Aractical Granite Car",
+      "price": 33,
+      "description": "Andy shoes are designed to keeping in mind durability as well as trends, the most stylish range of shoes & sandals",
+      "image": "https://images.unsplash.com/photo-1696209172169-a0b08d5db7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60",
+      "category": "mouse",
+      "stock": 3,
+      "rating": 5.5
+    },
+    {
+      "title": "dede",
+      "description": "gooood",
+      "price": "43",
+      "category": "dortmind",
+      "stock": "23",
+      "rating": "3.6",
+      "image": "https://firebasestorage.googleapis.com/v0/b/final-d783c.appspot.com/o/images%2Fdd.png?alt=media&token=bbb217bc-492a-4624-bced-5146daa02038",
+      "id": 514
+    },
+    {
+      "title": "Baton",
+      "description": "liked",
+      "price": "33",
+      "category": "konfet",
+      "stock": "343",
+      "rating": "7",
+      "image": null,
+      "id": 515
+    },
+    {
+      "title": "ghbgf",
+      "description": "rfew",
+      "price": "44",
+      "category": "ghgfhgfh",
+      "stock": "44",
+      "rating": "4",
+      "image": "https://firebasestorage.googleapis.com/v0/b/final-d783c.appspot.com/o/images%2FGS.jpg?alt=media&token=c4d4cb10-aeea-433f-9f53-fb15e6ed523c",
+      "id": 516
+    },
+    {
+      "title": "juju",
+      "description": "",
+      "price": "",
+      "category": "",
+      "stock": "",
+      "subcategory": "",
+      "rating": "",
+      "size": "",
+      "gender": "",
+      "disCountPrice": "",
+      "color": "#000",
+      "brand": "",
+      "image": null,
+      "date": "2023-10-25T15:50:54.128Z",
+      "id": 517
+    },
+    {
+      "title": "jaja",
+      "description": "jgjg",
+      "price": "888",
+      "category": "ki",
+      "stock": "5",
+      "subcategory": "ik",
+      "rating": "7",
+      "size": "5",
+      "gender": "man",
+      "disCountPrice": "9",
+      "color": "#b6a90b",
+      "brand": "huhu",
+      "image": "https://firebasestorage.googleapis.com/v0/b/finalproject-4d60a.appspot.com/o/images%2Fimage.jpg?alt=media&token=7d7aef8f-f69d-4a3f-8cfd-6609943e9232",
+      "date": "2023-10-24T15:58:50.000Z",
+      "id": 518
+    }
+  ]
+}

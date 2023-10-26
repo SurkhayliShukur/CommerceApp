@@ -1,7 +1,7 @@
 import React from 'react'
 import { BsPlus } from "react-icons/bs"
 import { useDispatch } from 'react-redux'
-import { addToCard } from '../../features/slices/basketSlice'
+import { addToCart } from '../../features/slices/basketSlice'
 import { toast } from 'react-toastify'
 
 const Product = ({ product }) => {
@@ -10,7 +10,7 @@ const Product = ({ product }) => {
 
   const addToBag = () => {
     dispatch(
-      addToCard({
+      addToCart({
         id: product.id,
         price: Number(product.price),
         amount: 1,
@@ -20,7 +20,7 @@ const Product = ({ product }) => {
         rating: product.rating,
         brand: product.brand,
         category: product.category,
-        discountPercentage: product.discountPercentage
+        totalPrice: Number(product.price)
       })
     );
     toast.success('Product added', {
