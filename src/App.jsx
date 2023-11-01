@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Sidebar from './Components/Sidebar'
 import AddProduct from './admin/page/Addproduct';
 import SignUp from './pages/Register/SignUp'
+import AddCategory from './admin/page/AddCategory'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
      <Route path='/addproduct' element = {<AddProduct/>} />
      <Route path='login' element = {<Login/>}/>
      <Route path='signup' element = {<SignUp/>}/>
+     <Route path='/addcategory' element = {<AddCategory/>}/>
     </Routes>
     <Sidebar/>
     <ToastContainer/>

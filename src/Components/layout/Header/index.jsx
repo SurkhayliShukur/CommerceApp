@@ -19,7 +19,7 @@ const Header = () => {
               setOpen(!open)
             }}>
               <CiWallet className="text-4xl text-cyan-600  cursor-pointer" />
-              <div className="bg-gega-red absolute -right-6 bottom-6 text-[12px] w-6 h-6  rounded-full flex justify-center items-center">
+              <div className="bg-red-600 absolute -right-4 bottom-6 text-[12px] w-6 h-6 text-white  rounded-full flex justify-center items-center">
                 {totalAmount}
               </div>
             </button>

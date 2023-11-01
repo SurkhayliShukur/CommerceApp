@@ -35,11 +35,11 @@ const Product = ({ product }) => {
     <>
       <div key={id} className='w-9/12 h-[340px]  mb-4 bg-slate-200 rounded-md border border-indigo-600 relative owerflow-hidden group transition'>
         <div className="w-full h-full flex justify-center items-center flex-col">
-          <div className="w-[405px] md:w-[230px] mx-auto flex justify-center items-center mt-2">
+          <div className="w-full flex justify-center items-center">
             <img
               src={image}
               alt={title}
-              className=" -mt-8 h-[120px] w-[270px] md:w-[150px] object-cover group-hover:scale-110 rounded-md transition duration-500"
+              className=" -mt-[50px] h-[230px] w-[450px]  object-cover group-hover:scale-110 rounded-md transition duration-300"
             />
 
             <div className="absolute top-2 -right-4 group-hover:right-1 opacity-0 group-hover:opacity-100 transition duration-500">
