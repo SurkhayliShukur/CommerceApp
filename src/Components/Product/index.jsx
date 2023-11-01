@@ -5,7 +5,7 @@ import { addToCart } from '../../features/slices/basketSlice'
 import { toast } from 'react-toastify'
 
 const Product = ({ product }) => {
-  const { id, title, category, price, image, raiting } = product
+  const { id, title, category, price, image, rating } = product
   const dispatch = useDispatch()
 
   const addToBag = () => {
@@ -58,7 +58,7 @@ const Product = ({ product }) => {
               </div>
 
               <div className="font-semibold text-violet-600 dark:text-cyan-200">
-                Rating:{raiting}
+                Rating:{rating}
               </div>
               <div className="font-semibold text-green-600 dark:text-cyan-200">
                 ${price}
