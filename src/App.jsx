@@ -9,6 +9,7 @@ import Sidebar from './Components/Sidebar'
 import AddProduct from './admin/page/Addproduct';
 import SignUp from './pages/Register/SignUp'
 import AddCategory from './admin/page/AddCategory'
+import AddSubCategory from './admin/page/AddSubCategory'
 
 function App() {
 
@@ -20,6 +21,8 @@ function App() {
      <Route path='login' element = {<Login/>}/>
      <Route path='signup' element = {<SignUp/>}/>
      <Route path='/addcategory' element = {<AddCategory/>}/>
+     <Route path='/addsubcategory' element = {<AddSubCategory/>}/>
+
     </Routes>
     <Sidebar/>
     <ToastContainer/>

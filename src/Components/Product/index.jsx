@@ -33,8 +33,8 @@ const Product = ({ product }) => {
 
   return (
     <>
-      <div key={id} className='w-9/12 h-[340px]  mb-4 bg-slate-200 rounded-md border border-indigo-600 relative owerflow-hidden group transition'>
-        <div className="w-full h-full flex justify-center items-center flex-col">
+      <div key={id} className='w-9/12 h-[340px]   mb-4 bg-slate-200 rounded-md border border-indigo-600 relative owerflow-hidden group transition'>
+        <div className="w-full h-full flex justify-center  items-center flex-col">
           <div className="w-full flex justify-center items-center">
             <img
               src={image}
