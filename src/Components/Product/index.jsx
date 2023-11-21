@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux'
 import { addToCart } from '../../features/slices/basketSlice'
 import { toast } from 'react-toastify'
 
+
+
 const Product = ({ product }) => {
   const { id, title, category, price, image, rating } = product
   const dispatch = useDispatch()
@@ -24,15 +26,16 @@ const Product = ({ product }) => {
       })
     );
     toast.success('Product added', {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose:1000
+      position: toast.POSITION.TOP_RIGHT,
+      autoClose: 1000
     });
-    
+
   };
 
 
   return (
     <>
+     
       <div key={id} className='w-9/12 h-[340px]   mb-4 bg-slate-200 rounded-md border border-indigo-600 relative owerflow-hidden group transition'>
         <div className="w-full h-full flex justify-center  items-center flex-col">
           <div className="w-full flex justify-center items-center">

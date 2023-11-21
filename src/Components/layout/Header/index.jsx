@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import { CiWallet } from "react-icons/ci"
 
 const Header = () => {
-  const { open, setOpen } = useContext(ProductContext)
+  const { setState } = useContext(ProductContext)
   const totalAmount = useSelector(
     (state) => state.persistedReducer.basket.totalAmount
   )
@@ -16,7 +16,7 @@ const Header = () => {
           font-primary text-4xl p-3 text-primary">
             <h1>Senior.az</h1>
             <button className='flex relative mr-5' onClick={() => {
-              setOpen(!open)
+              setState({open:true})
             }}>
               <CiWallet className="text-4xl text-cyan-600  cursor-pointer" />
               <div className="bg-red-600 absolute -right-4 bottom-6 text-[12px] w-6 h-6 text-white  rounded-full flex justify-center items-center">

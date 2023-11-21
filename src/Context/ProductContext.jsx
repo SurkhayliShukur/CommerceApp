@@ -1,4 +1,4 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect, useReducer } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -6,38 +6,44 @@ import { toast } from "react-toastify";
 const ProductContext = createContext();
 
 const ProductContextProvider = ({ children }) => {
-    const [product, setProduct] = useState([])
-    const [open, setOpen] = useState(false)
-    // filter 
-    const [filter, setFilter] = useState({
-        minPrice: "",
-        maxPrice: "",
-        rating: "",
-        search: ""
-    })
-    const [categories, setCategories] = useState([])
+
+
+    const [state, setState] = useReducer((prevState, nextState) => ({ ...prevState, ...nextState }),
+        {
+            product: [],
+            open: false,
+            filter: {
+                minPrice: "",
+                maxPrice: "",
+                rating: "",
+                search: ""
+            },
+            categories: [],
+        }
+    )
+
 
     const applyFilter = () => {
-        const filtered = [...product];
+        const filtered = [state.product];
 
-        if (filter.minPrice !== "") {
-            filtered = filtered.filter((products) => products.price >= parseFloat(filter.minPrice))
+        if (state.filter.minPrice !== "") {
+            filtered = filtered.filter((products) => products.price >= parseFloat(state.filter.minPrice))
         }
-        if (filter.maxPrice !== "") {
-            filtered = filtered.filter((products) => products.price <= parseFloat(filter.maxPrice))
+        if (state.filter.maxPrice !== "") {
+            filtered = filtered.filter((products) => products.price <= parseFloat(state.filter.maxPrice))
         }
 
-        if (filter.rating !== "") {
-            filtered = filtered.filter((products) => products.price >= parseFloat(filter.rating))
+        if (state.filter.rating !== "") {
+            filtered = filtered.filter((products) => products.price >= parseFloat(state.filter.rating))
         }
-        if (filter.search !== "") {
+        if (state.filter.search !== "") {
             filtered = filtered.filter((products) => {
                 const titleMatches = products.title
                     .toLowerCase()
-                    .includes(filter.search.toLowerCase());
+                    .includes(state.filter.search.toLowerCase());
                 const categoryMatches = products.category
                     .toLowerCase()
-                    .includes(filter.search.toLowerCase());
+                    .includes(state.filter.search.toLowerCase());
 
                 return titleMatches || categoryMatches;
             });
@@ -52,7 +58,7 @@ const ProductContextProvider = ({ children }) => {
                 throw new Error("Something went wrong")
             }
             else {
-                setCategories(request.data)
+              setState({categories:request.data})
             }
         } catch (error) {
             toast.error(error.message)
@@ -67,7 +73,9 @@ const ProductContextProvider = ({ children }) => {
                 console.log(error)
             }
             else {
-                setProduct(res.data)
+                // setProduct(res.data)
+                setState({product:res.data})
+            
             }
         }
         catch (error) {
@@ -82,18 +90,12 @@ const ProductContextProvider = ({ children }) => {
 
     useEffect(() => {
         applyFilter()
-    }, [filter, product])
+    }, [state.filter, state.product])
 
-    const value = {
-        product,
-        setProduct,
-        open,
-        setOpen,
-        filter,
-        setFilter,
-        categories,
-        setCategories
-    }
+   const value = {
+     state,
+     setState
+   }
 
     return (
         <ProductContext.Provider value={value}>
